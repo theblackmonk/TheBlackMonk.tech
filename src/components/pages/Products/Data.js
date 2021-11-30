@@ -2,17 +2,17 @@ export const homeObjOne = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Hello from',
-    headline: 'TheBlackMonk',
+    topLine: 'VIEW OUR PRODUCTS',
+    headline: 'Shop through our catalog of products',
     description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-    buttonLabel: 'Get Started',
+      'We provide worldwide shipping to all countries. If there are any issues, just issue a refund and we will process your request',
+    buttonLabel: 'Shop Now',
     imgStart: '',
-    img: 'images/IMG-9.jpeg',
+    img: 'images/svg-4.svg',
     alt: 'Credit Card'
-};
-
-export const homeObjTwo = {
+  };
+  
+  export const homeObjTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -25,7 +25,7 @@ export const homeObjTwo = {
     img: 'images/svg-5.svg',
     alt: 'Vault'
   };
-
+  
   export const homeObjThree = {
     lightBg: true,
     lightText: false,

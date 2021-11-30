@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MdFingerprint } from 'react-icons/md';
+import { BiPlanet } from 'react-icons/bi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from '../Button';
 import './Navbar.css';  //this css has modes
@@ -22,12 +22,11 @@ function Navbar() {
         }
     };
 
-    /*
+    
     useEffect(() => {
         showButton();
     }, []);
 
-    */
 
     window.addEventListener('resize', showButton);
 
@@ -38,7 +37,7 @@ function Navbar() {
                 <div className="navbar-container container">
                     <Link to='/' className='navbar-logo' onClick=
                     {closeMobileMenu}>
-                        <MdFingerprint className='navbar-icon' />
+                        <BiPlanet className='navbar-icon' />
                         TBM
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -51,12 +50,12 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item' onClick={closeMobileMenu}>
-                            <Link to='/portfolio' className='nav-links'>
+                            <Link to='/Services' className='nav-links'>
                                 Portfolio
                             </Link>
                         </li>
                         <li className='nav-item' onClick={closeMobileMenu}>
-                            <Link to='/bitcoin' className='nav-links'>
+                            <Link to='/products' className='nav-links'>
                                 Bitcoin
                             </Link>
                         </li>
@@ -66,7 +65,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-btn'>
-                            {Button ? ( 
+                            {button ? ( 
                                 <Link to='/sign-up' className='btn-link'>
                                     <Button buttonStyle='btn--outline'>SIGN UP
                                     </Button>
