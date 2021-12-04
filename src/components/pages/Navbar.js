@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
-import { BiPlanet } from 'react-icons/bi';
+import { GiMeditation } from 'react-icons/gi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from '../Button';
 import './Navbar.css';  //this css has modes
@@ -30,19 +31,29 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+   
+//<span class="square border-bottom border-dark border-1">
     return (
         <>
-        <IconContext.Provider value={{ color: '#fff'}}>
+
+
+
+        <IconContext.Provider value={{ color: '#000000'}}>
+        
             <div className="navbar">
+            
                 <div className="navbar-container container">
+                
+            
                     <Link to='/' className='navbar-logo' onClick=
                     {closeMobileMenu}>
-                        <BiPlanet className='navbar-icon' />
+                        <GiMeditation className='navbar-icon' />
                         TBM
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}
                     </div>
+                    
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -64,6 +75,7 @@ function Navbar() {
                                 Gallery
                             </Link>
                         </li>
+                        
                         <li className='nav-btn'>
                             {button ? ( 
                                 <Link to='/sign-up' className='btn-link'>
@@ -78,11 +90,17 @@ function Navbar() {
                                 </Link>
                             )}
                         </li>
+                        
 
                     </ul>
+                    
+                    
                 </div>
+                
             </div>
+            
         </IconContext.Provider>
+        
         </>
     );
 }
