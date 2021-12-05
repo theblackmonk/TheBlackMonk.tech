@@ -35,9 +35,6 @@ function Navbar() {
 //<span class="square border-bottom border-dark border-1">
     return (
         <>
-
-
-
         <IconContext.Provider value={{ color: '#000000'}}>
         
             <div className="navbar">
@@ -61,31 +58,36 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item' onClick={closeMobileMenu}>
-                            <Link to='/Services' className='nav-links'>
-                                Portfolio
+                            <Link to='/About' className='nav-links'>
+                                About
                             </Link>
                         </li>
                         <li className='nav-item' onClick={closeMobileMenu}>
-                            <Link to='/products' className='nav-links'>
-                                Bitcoin
+                            <Link to='/Bitcoin' className='nav-links'>
+                            Bitcoin
                             </Link>
                         </li>
                         <li className='nav-item' onClick={closeMobileMenu}>
-                            <Link to='/gallery' className='nav-links'>
-                                Gallery
+                            <Link to='/Ethereum' className='nav-links'>
+                                Ethereum
+                            </Link>
+                        </li>
+                        <li className='nav-item' onClick={closeMobileMenu}>
+                            <Link to='/Meditation' className='nav-links'>
+                                Meditation
                             </Link>
                         </li>
                         
                         <li className='nav-btn'>
                             {button ? ( 
-                                <Link to='/sign-up' className='btn-link'>
-                                    <Button buttonStyle='btn--outline'>SIGN UP
+                                <Link to='/youtube' className='btn-link'>
+                                    <Button buttonStyle='btn--outline'>Youtube
                                     </Button>
                                 </Link>) : (
-                                <Link to='/sign-up' className='btn-link' onClick={closeMobileMenu}>
+                                <Link to='/youtube' className='btn-link' onClick={closeMobileMenu}>
                                     <Button buttonStyle='btn--outline'
                                     buttonSize='btn--mobile'>
-                                    SIGN UP
+                                    Youtube
                                     </Button>
                                 </Link>
                             )}

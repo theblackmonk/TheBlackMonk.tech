@@ -1,14 +1,14 @@
 export const homeObjOne = {
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Bitcoin',
-    headline: 'Your intro to cryptocurrency',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'SIGN UP TODAY',
+    headline: 'Join today to receive an exclusive offer',
     description:
-      'Why all the hype',
-    buttonLabel: 'Shop Now',
+      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+    buttonLabel: 'Sign Up',
     imgStart: '',
-    img: 'images/svg-4.svg',
+    img: 'images/svg-6.svg',
     alt: 'Credit Card'
   };
   
@@ -16,10 +16,10 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Bitcoin',
-    headline: 'The most secure way to store your money',
+    topLine: '100% SECURE',
+    headline: 'Stay protected 24/7 anywhere anytime',
     description:
-      'Each bitcoin miner and node contains a full copy of every transaction. Because there is no main server, hackers have to hack more than 50% of all nodes simultaneously. It`s hard enough to hack one computer, let alone half of a global network at the same time. ',
+      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
     buttonLabel: 'Learn More',
     imgStart: '',
     img: 'images/svg-5.svg',
@@ -30,10 +30,10 @@ export const homeObjOne = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Volatility',
-    headline: 'Is it a currency?',
+    topLine: 'EASY SETUP',
+    headline: 'Super fast and simple onboarding process',
     description:
-      "Bitcoin is transitioning through the phases of money. Think of bitcoin and gold. 1st it is a collectors item. 2nd it is a store of value. 3rd it is a Currency. It's only been twelve years but already we can see the price is stabalizing",
+      "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
     buttonLabel: 'Start Now',
     imgStart: 'start',
     img: 'images/svg-7.svg',

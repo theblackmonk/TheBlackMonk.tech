@@ -1,15 +1,15 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
-import Pricing from '../Pricing';
+import Projects from '../Projects';
+import ComingSoon from '../../ComingSoon';
 
-function SignUp() {
+function Youtube() {
   return (
     <>
-      <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
+      <ComingSoon />
     </>
   );
 }
 
-export default SignUp;
+export default Youtube;

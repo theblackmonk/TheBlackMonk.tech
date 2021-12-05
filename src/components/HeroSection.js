@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 
 function HeroSection({lightBg, topLine, lightText, lightTextDesc, headline, description,
-buttonLabel, img, alt, imgStart
+buttonLabel, img, alt, imgStart, linked
 }) {
     return (
         <>
@@ -18,7 +18,7 @@ buttonLabel, img, alt, imgStart
                                 <h1 className={lightText ? 'heading' : 'heading dark'}>{headline}</h1>
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
                                 {description}</p>
-                                <Link to='/sign-up'>
+                                <Link to={linked}>
                                     <Button buttonSize='btn--wide' buttonColor='blue'>
                                         {buttonLabel}
                                     </Button>

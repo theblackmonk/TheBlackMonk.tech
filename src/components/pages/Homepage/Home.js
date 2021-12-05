@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data'; //object we will pass in with all properties
-import Pricing from '../Pricing';
+import Projects from '../Projects';
 
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
             <HeroSection {...homeObjTwo} />
             <HeroSection {...homeObjThree} />
             <HeroSection {...homeObjFour} />
-            <Pricing />
+            <Projects />
             <HeroSection {...homeObjFive} />
         </>
     );

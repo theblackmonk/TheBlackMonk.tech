@@ -1,31 +1,31 @@
-.home__hero-section {
-    color: #fff;
-    padding: 160px 0;
+.soon-section {
+    color: #000000;
+    padding: 250px 0;
   }
   
-  .home__hero-row {
+  .soon-row {
     align-items: center;
   }
   
   .row {
     display: flex;
-    margin-right: -15px;
-    margin-bottom: -15px;
-    margin-left: -15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
     flex-wrap: wrap;
     align-content: stretch;
   }
   
-  .col {
+  .column {
     margin-bottom: 15px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 200px;
     flex: 1;
     max-width: 50%;
     flex-basis: 50%;
   }
   
-  .home__hero-text-wrapper {
+  .soon-text-wrapper {
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
@@ -46,29 +46,25 @@
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: #f7f8fa;
+    color: #141516;
   }
   
-  .dark {
-    color: #000000;
-  }
-  
-  .darkBg {
+  .soonBg {
     background-color: #dde7fd;
   }
   
-  .home__hero-subtitle {
+  .soon-subtitle {
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
   }
   
-  .home__hero-img-wrapper {
+  .soon-img-wrapper {
     max-width: 555px;
   }
   
-  .home__hero-img {
+  .soon-img {
     max-width: 95%;
     margin-top: 0;
     margin-right: 0;
@@ -84,7 +80,7 @@
   }
   
   @media screen and (max-width: 991px) {
-    .container {
+    .sooncontainer {
       padding-right: 30px;
       padding-left: 30px;
     }
@@ -95,8 +91,9 @@
       padding-bottom: 65px;
     }
   
-    .col {
+    .column {
       max-width: 100%;
       flex-basis: 100%;
+      padding-left: 20px;
     }
   }

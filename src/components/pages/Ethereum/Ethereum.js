@@ -1,16 +1,15 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
-import Pricing from '../Pricing';
+import Projeccts from '../Projects';
+import ComingSoon from '../../ComingSoon';
 
-function Services() {
+function Ethereum() {
   return (
     <>
-      <Pricing />
-      <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
+      <ComingSoon />
     </>
   );
 }
 
-export default Services;
+export default Ethereum;

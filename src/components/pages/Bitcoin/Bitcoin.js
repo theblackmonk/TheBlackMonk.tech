@@ -1,15 +1,15 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
-import Pricing from '../Pricing';
+import Projects from '../Projects';
+import ComingSoon from '../../ComingSoon';
 
-function Products() {
+function Bitcoin() {
   return (
     <>
-      <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjTwo} />
+      <ComingSoon />
     </>
   );
 }
 
-export default Products;
+export default Bitcoin;

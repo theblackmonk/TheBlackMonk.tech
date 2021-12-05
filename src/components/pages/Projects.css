@@ -9,7 +9,7 @@
   .pricing__container-card {
     background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-    width: 280px;
+    width: 410px;
     height: 500px;
     text-decoration: none;
     border-radius: 4px;
@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   
   .pricing__wrapper {
@@ -44,8 +45,11 @@
   }
   
   .pricing__heading {
-    color: #1c2237;
     margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #000000;
   }
   
   .pricing__container-cardInfo {
@@ -72,8 +76,9 @@
   }
   
   .pricing__container-features {
-    margin: 16px 0 32px;
-    list-style: none;
+    margin: 0px 0 10px;
+    list-style: square;
+    margin-right: 23px;
   }
   
   .pricing__container-features li {

@@ -1,70 +1,79 @@
 import React from 'react';
 import { Button } from '../Button';
-import './Pricing.css';
+import './Projects.css';
 import { FaFire } from 'react-icons/fa';
 import { BsXDiamondFill } from 'react-icons/bs';
-import { GiCrystalize } from 'react-icons/gi';
+import { GiAbstract069, GiAbstract116, GiBowenKnot, GiAbstract082 } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
-function Pricing() {
+function Projects() {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
       <div className='pricing__section'>
         <div className='pricing__wrapper'>
-          <h1 className='pricing__heading'>Pricing</h1>
+          <h1 className='pricing__heading'>Portfolio</h1>
           <div className='pricing__container'>
             <Link to='/sign-up' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
-                  <FaFire />
+                  <GiAbstract082 />
                 </div>
-                <h3>Starter</h3>
-                <h4>$8.99</h4>
-                <p>per month</p>
+                <h3>Blockchain Kickstarter</h3>
+                <h7>Udemy tutorial</h7>
+                <br></br>
+                <br></br>
+                <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
-                  <li>100 Transactions</li>
-                  <li>2% Cash Back</li>
-                  <li>$10,000 Limit</li>
+                  <li>Reduce scammers, pay vendor directly</li>
+                  <li>Money is stored in a secure smart contract</li>
+                  <li>No trusting third parties holding funds</li>
+                  <li>Verify who recieved the money</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='primary'>
-                  Choose Plan
+                  View Here
                 </Button>
               </div>
             </Link>
             <Link to='/sign-up' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
-                  <BsXDiamondFill />
+                  <GiAbstract116 />
                 </div>
-                <h3>Gold</h3>
-                <h4>$29.99</h4>
-                <p>per month</p>
+                <h3>Ethereum token exchange</h3>
+                <h7>DAPP univerisity tutorial</h7>
+                <br></br>
+                <br></br>
+                <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
-                  <li>1000 Transactions</li>
-                  <li>3.5% Cash Back</li>
-                  <li>$100,000 Limit</li>
+                  <li>Trade autonomously 24/7</li>
+                  <li>No identification needed</li>
+                  <li>All users treated equally</li>
+                  <li>No blacklisting</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='blue'>
-                  Choose Plan
+                  View Here
                 </Button>
               </div>
             </Link>
             <Link to='/sign-up' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
-                  <GiCrystalize />
+                  <GiAbstract069 />
                 </div>
-                <h3>Diamond</h3>
-                <h4>$99.99</h4>
-                <p>per month</p>
+                <h3>ETH 2.0 Validator Crowdfunding</h3>
+                <h7>built from scratch</h7>
+                <br></br>
+                <br></br>
+                <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
-                  <li>Unlimited Transactions</li>
-                  <li>5% Cash Back</li>
-                  <li>Unlimited Spending</li>
+                  <li>Fundraising made easy</li>
+                  <li>Collect 32 ETH from your network</li>
+                  <li>Full transparency of validator shares</li>
+                  <li>Practice start to finish on testnet</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='primary'>
-                  Choose Plan
+                  View Here
                 </Button>
               </div>
             </Link>
@@ -74,4 +83,4 @@ function Pricing() {
     </IconContext.Provider>
   );
 }
-export default Pricing;
+export default Projects;

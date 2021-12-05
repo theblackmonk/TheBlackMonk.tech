@@ -2,14 +2,14 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Exclusive Access',
-  headline: 'Unlimited Transactions with zero fees',
+  topLine: 'Bitcoin',
+  headline: 'The most secure way to store your money',
   description:
-    'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-  buttonLabel: 'Get Started',
+    'Each bitcoin miner and node contains a full copy of every transaction. Because there is no main server, hackers have to hack more than 50% of all nodes simultaneously. It`s hard enough to hack one computer, let alone half of a global network at the same time. ',
+  buttonLabel: 'Learn More',
   imgStart: '',
-  img: 'images/svg-1.svg',
-  alt: 'Credit Card'
+  img: 'images/svg-5.svg',
+  alt: 'Vault'
 };
 
 export const homeObjTwo = {
