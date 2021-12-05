@@ -14,7 +14,7 @@ function Projects() {
         <div className='pricing__wrapper'>
           <h1 className='pricing__heading'>Portfolio</h1>
           <div className='pricing__container'>
-            <Link to='/sign-up' className='pricing__container-card'>
+            <Link to='/about' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
                   <GiAbstract082 />
@@ -35,7 +35,7 @@ function Projects() {
                 </Button>
               </div>
             </Link>
-            <Link to='/sign-up' className='pricing__container-card'>
+            <Link to='/about' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
                   <GiAbstract116 />
@@ -56,7 +56,7 @@ function Projects() {
                 </Button>
               </div>
             </Link>
-            <Link to='/sign-up' className='pricing__container-card'>
+            <Link to='/about' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
                   <GiAbstract069 />
