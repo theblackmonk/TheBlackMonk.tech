@@ -7,7 +7,7 @@
   }
   
   .pricing__container-card {
-    background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
+    background: linear-gradient(45deg, #0668fc 0%, #022063 150%);
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
     width: 410px;
     height: 500px;
@@ -16,8 +16,8 @@
   }
   
   .pricing__container-card:nth-child(2) {
-    transform: scale(1.05);
-    background: #242424;
+    transform: scale(1.04);
+    background: linear-gradient(45deg, #032355 0%, #000000 50%);
   }
   
   .pricing__container-card:hover {
@@ -105,7 +105,8 @@
     }
   
     .pricing__container-card {
-      width: 90%;
+      width: 70%;
+      background: linear-gradient(45deg, #0668fc 0%, #022063 150%);
     }
   
     .pricing__wrapper {
@@ -117,7 +118,7 @@
   
     .pricing__container-card:nth-child(2) {
       transform: scale(1);
-      background: #242424;
+      background: linear-gradient(45deg, #032355 0%, #000000 50%);;
       margin: 24px;
     }
   

@@ -39,10 +39,12 @@ export const homeObjThree = {
     topLine: 'Coding History',
     headline: 'Formal + Self-taught',
     description:
-      'I graduated in 2019 with a degree in Electrical Engineering, and a course focus on hardware + software. I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on youtube.',
+    "I was first introduced to coding in highschool when I joined my local First Robotics Club. Team 3414 Hackbots. We made it to Worlds in 2013!",
+    description2: "I graduated from the University of Michigan in 2019 with a degree in Electrical Engineering. I took several classes for C, C++, Java, and Android Studio. Then I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on youtube.",
+    description3: '',
     buttonLabel: 'Past Work Experience',
     imgStart: '',
-    img: 'images/go-blue.jpg',
+    img: 'images/blue.png',
     alt: 'Vault',
     linked: '/about'
   };
@@ -58,7 +60,7 @@ export const homeObjThree = {
       "January 2021 I typed out my New Year's Resolution to become a Blockchain Developer. Along the way I got into the bitcoin whitepaper, Bitcoin Miami, Austrian Economics, NFTs, and a network of people creating a decentralized future. I am documenting my daily routine as I learn to create applications on ethereum",
     buttonLabel: 'Watch Now',
     imgStart: 'start',
-    img: 'images/new-years.png',
+    img: 'images/newyear2.png',
     alt: 'Vault',
     linked: '/youtube'
   };
