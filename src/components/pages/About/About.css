@@ -8,11 +8,11 @@
     max-width: 70%;
     flex-basis: 50%;
     align-content: stretch;
-    border-radius: 1%;
+    border-radius: 0.5%;
     border-width: 5px;
 }
 .card-deck {
-    display:flex;
+    display: flex;
     margin-right: 10%;
     margin-bottom: 15px;
     margin-left: 10%;

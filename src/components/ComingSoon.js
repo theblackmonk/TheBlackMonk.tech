@@ -18,7 +18,7 @@ function ComingSoon({
                           <div className='soon-text-wrapper'>
                               
                                 <h1 className='heading'>Coming Soon</h1>
-                                <div className='top-line'>patience is a virtue</div>
+                                <div className='top-lined'>patience is a virtue</div>
                                 <Link to='/'>
                                     <Button buttonSize='btn--wide' buttonColor='blue'>
                                         Back Home

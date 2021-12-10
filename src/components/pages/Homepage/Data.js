@@ -1,3 +1,5 @@
+import React from 'react';
+
 //hello from the black monk
 export const homeObjOne = {
     lightBg: true,
@@ -12,7 +14,7 @@ export const homeObjOne = {
     imgStart: '',
     img: 'images/suit-3.png',
     alt: 'Credit Card',
-    linked: '/about'
+    linked: '/projects'
 };
 
 //my passion for blockchain
@@ -28,7 +30,9 @@ export const homeObjTwo = {
   imgStart: 'start',
   img: 'images/office-2007.png',
   alt: 'Vault',
-  linked: '/about'
+  linked: '/projects',
+  exit: '',
+  href: 'ScrollToTop'
 };
 
 //my coding experience coding
@@ -46,7 +50,12 @@ export const homeObjThree = {
     imgStart: '',
     img: 'images/blue.png',
     alt: 'Vault',
-    linked: '/about'
+    //linked: { pathname: "https://www.google.com" }
+    //linked: '/some-path'
+    //linked: {window.location.replace('https://www.google.com')}
+    linked: '',
+    exit: 'link',
+    href: 'https://www.linkedin.com/in/davidoneill123/'
   };
 
   //documenting my journey
@@ -62,7 +71,11 @@ export const homeObjThree = {
     imgStart: 'start',
     img: 'images/newyear2.png',
     alt: 'Vault',
-    linked: '/youtube'
+    linked: '',
+    exit: 'link',
+    href: 'https://www.youtube.com/channel/UCXfenWAdg1gCgoJXfPuK6_Q'
+
+    
   };
   
   //Why ReactJS and solidity
@@ -74,7 +87,7 @@ export const homeObjThree = {
     headline: 'ReactJS and Solidity?',
     description:
     'I believe in a decentralized future and maintaining human sovereinty as we transition from the physical world into the digital world. At the moment this concept is being tested on ethereum. Which is why I have decided to learn ReactJS and Solidity, two common and versatile languages to make DAPPS',
-    buttonLabel: 'My Portfolio',
+    buttonLabel: 'Learn More',
     imgStart: 'start',
     img: 'images/blockchain.png',
     alt: 'Vault',

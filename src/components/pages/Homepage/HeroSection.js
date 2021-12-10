@@ -2,10 +2,13 @@ import React from 'react';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
+import { ScrollToProjects } from '../../ScrollToTop';
+
 
 function HeroSection({lightBg, topLine, lightText, lightTextDesc, headline, description, description2, description3,
-buttonLabel, img, alt, imgStart, linked
+buttonLabel, img, alt, imgStart, linked, exit, href, btn
 }) {
+
     return (
         <>
             <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}>
@@ -22,11 +25,14 @@ buttonLabel, img, alt, imgStart, linked
                                 {description2}</p>
                                 <p className={'home__hero-subtitle dark'}>
                                 {description3}</p>
-                                <Link to={linked}>
-                                    <Button buttonSize='btn--wide' buttonColor='blue'>
+                                
+                                {btn ?! '' : <Link to={linked} >
+                                    <Button buttonSize='btn--wide' buttonColor='blue' type="button"
+                                        onClick={ exit === 'link' ? (e) => {e.preventDefault(); window.location.href=href; } : ''} >
                                         {buttonLabel}
                                     </Button>
-                                </Link>
+                                </Link>}
+                                
                           </div>
                       </div>
                       <div className='col'>

@@ -11,9 +11,9 @@ function Bitcoin() {
       
       <h1 className='head'>What's the Big Deal</h1>
         <Card className='card'>
-          <Card.Img variant="top" src="images/hyperbolic.png" className='top' />
+          <Card.Img variant="top" src="images/evolve.png" className='top' />
             <Card.Body>
-              <Card.Title className='top-line'>Don't watch the price. Learn the fundamentals</Card.Title>
+              <Card.Title className='top-lines'>In a digital world, own digital assets</Card.Title>
                 <Card.Text className='body'>
                   The Bottom line: For any store of value asset, Scarcity = Value and Abundance = Worthless.
                   There are only 21 million bitcoin that will ever exist in the universe. 
@@ -44,5 +44,7 @@ function Bitcoin() {
     </>
   );
 }
+
+//Don't watch the price. Learn the fundamentals
 
 export default Bitcoin;

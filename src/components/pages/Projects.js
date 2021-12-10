@@ -30,7 +30,8 @@ function Projects() {
                   <li>No trusting third parties holding funds</li>
                   <li>Verify who recieved the money</li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
+                <Button buttonSize='btn--wide' buttonColor='primary'
+                onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }}>
                   View Here
                 </Button>
               </div>
@@ -51,7 +52,8 @@ function Projects() {
                   <li>All users treated equally</li>
                   <li>No blacklisting</li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='blue'>
+                <Button buttonSize='btn--wide' buttonColor='blue'
+                onClick={(e) => {e.preventDefault(); window.location.href='https://www.stackincoins.com'; }}>
                   View Here
                 </Button>
               </div>
@@ -62,7 +64,7 @@ function Projects() {
                   <GiAbstract069 />
                 </div>
                 <h3>ETH 2.0 Validator Crowdfunding</h3>
-                <h7>built from scratch</h7>
+                <h7>built from scratch - Coming Soon</h7>
                 <br></br>
                 <br></br>
                 <h6>Problem Solution:</h6>
@@ -72,14 +74,26 @@ function Projects() {
                   <li>Full transparency of validator shares</li>
                   <li>Practice start to finish on testnet</li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
+                <Button buttonSize='btn--wide' buttonColor='primary'
+                onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }}>
                   View Here
                 </Button>
               </div>
             </Link>
           </div>
         </div>
+        <article className="cards">
+      <Button buttonSize='btn--mobile' buttonColor='blue' type="button"
+           onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }} >
+           GitHub  
+      </Button>
+      <Button buttonSize='btn--mobile' buttonColor='blue' type="button"
+           onClick={(e) => {e.preventDefault(); window.location.href='https://www.linkedin.com/in/davidoneill123/'; }} >
+           LinkedIn 
+      </Button>
+      </article>
       </div>
+      
     </IconContext.Provider>
   );
 }
