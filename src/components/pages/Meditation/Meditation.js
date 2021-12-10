@@ -12,7 +12,7 @@ function Meditation() {
         <Card className='card'>
           <Card.Img variant="top" src="images/med1.png" className='top' />
             <Card.Body>
-              <Card.Title className='top-line'>Meditation is for everyone</Card.Title>
+              <Card.Title className='top-lines'>Meditation is for everyone</Card.Title>
                 <Card.Text className='body'>
                   Sit in a chair, or on the floor. Set a timer for 5 minutes. Look directly infront of you and relax your gaze as if you were looking at a far away mountain.
                   Take 5 deep breaths. Close your eyes.
