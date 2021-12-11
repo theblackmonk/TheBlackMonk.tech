@@ -11,7 +11,7 @@ function Bitcoin() {
       
       <h1 className='head'>Don't watch the price<br></br>learn the fundamentals</h1>
         <Card className='card'>
-          <Card.Img variant="top" src="images/evolve.png" className='top' />
+          <Card.Img variant="top" src="images/Evolve.jpg" className='top' />
             <Card.Body>
       
                 <Card.Text className='body'>
