@@ -10,7 +10,7 @@ function Ethereum() {
     <>
     <h1 className='head'>Ethereum: The First World Computer</h1>
         <Card className='card'>
-          <Card.Img variant="top" src="images/evolve.png" className='top' />
+          <Card.Img variant="top" src="images/Evolve.png" className='top' />
             <Card.Body>
               
                 <Card.Text className='body'>
