@@ -25,8 +25,8 @@ export const homeObjTwo = {
   topLine: 'Passion',
   headline: 'I clearly remember',
   description:
-    'when my parents bought Microsoft Office 2007. Even though it would get me in trouble, I snuck into the office, opened the packaging, and popped in the installation cd when it was vacant. I had just turned 11 but, I had developed a strategy for learning computers fast. I would start at the first button and click every possible setting sequentially until I understood. It was not long until I was the family computer expert.',
-  buttonLabel: 'View My Latest Project',
+    'when my parents bought Microsoft Office 2007. Even though it would get me in trouble, I snuck into the office, opened the packaging, and popped in the installation cd when it was vacant. I had just turned 11 but I had developed a strategy for learning computers fast. I would start at the first button and click every possible setting sequentially until I understood. It was not long until I was the family computer expert.',
+  buttonLabel: 'View My Latest Projects',
   imgStart: 'start',
   img: 'images/office-2007.png',
   alt: 'Vault',
@@ -66,7 +66,7 @@ export const homeObjThree = {
     topLine: 'Youtube Channel',
     headline: 'TheBlackMonk',
     description:
-      "January 2021 I typed out my New Year's Resolution to become a Blockchain Developer. Along the way I got into the bitcoin whitepaper, Bitcoin Miami, Austrian Economics, NFTs, and a network of people creating a decentralized future. I am documenting my daily routine as I learn to create applications on ethereum",
+      "January 2021 I typed out my New Year's Resolution to become a Blockchain Developer. Along the way I got into the bitcoin whitepaper, Bitcoin Miami, Austrian Economics, NFTs, and a network of people creating a decentralized future. January 2022 I am documenting my daily routine as I learn to create applications on ethereum",
     buttonLabel: 'Watch Now',
     imgStart: 'start',
     img: 'images/newyear2.png',
@@ -86,12 +86,12 @@ export const homeObjThree = {
     topLine: 'Why',
     headline: 'ReactJS and Solidity?',
     description:
-    'I believe in a decentralized future and maintaining human sovereinty as we transition from the physical world into the digital world. At the moment this concept is being tested on ethereum. Which is why I have decided to learn ReactJS and Solidity, two common and versatile languages to make DAPPS',
+    'I believe in a decentralized future and maintaining human sovereignty as we transition from the physical world into the digital world. At the moment this concept is being tested on ethereum. Which is why I have decided to learn ReactJS and Solidity, two common and versatile languages to make DAPPS',
     buttonLabel: 'Learn More',
     imgStart: 'start',
     img: 'images/blockchain.png',
     alt: 'Vault',
-    linked: '/about'
+    linked: '/ethereum'
   };
 
   export const homeObjSix = {

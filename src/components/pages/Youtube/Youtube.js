@@ -5,11 +5,7 @@ import Projects from '../Projects';
 import ComingSoon from '../../ComingSoon';
 
 function Youtube() {
-  return (
-    <>
-      <ComingSoon />
-    </>
-  );
+  window.location.href = 'https://www.youtube.com/channel/UCXfenWAdg1gCgoJXfPuK6_Q';
 }
 
 export default Youtube;

@@ -78,11 +78,11 @@ function Footer() {
             </Link>
           </div>
           <small className='website-rights'>TBM © 2021</small>
-          {/*}
+          
           <div className='social-icons'>
             <Link
               className='social-icon-link'
-              to='/'
+              to='//instagram.com/chilledpear_/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -90,18 +90,15 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                'https://www.youtube.com/channel/UCXfenWAdg1gCgoJXfPuK6_Q'
-              }
-              target='_blank'
+              to='//youtube.com/channel/UCXfenWAdg1gCgoJXfPuK6_Q'
               aria-label='Youtube'
+              target='_blank'
             >
               <FaYoutube />
             </Link>
             <Link
-            
               className='social-icon-link'
-              to='/'
+              to='//linkedin.com/in/davidoneill123/'
               target='_blank'
               aria-label='LinkedIn'
             >
@@ -109,7 +106,7 @@ function Footer() {
             </Link>
            
           </div>
-           */}
+           
         </div>
       </section>
     </div>

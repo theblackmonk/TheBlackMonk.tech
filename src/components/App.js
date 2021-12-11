@@ -11,7 +11,7 @@ import Ethereum from '../components/pages/Ethereum/Ethereum';
 import Meditation from '../components/pages/Meditation/Meditation';
 import Youtube from '../components/pages/Youtube/Youtube';
 import Projects from './pages/Projects';
-import { ScrollToTop } from './ScrollToTop';
+import ScrollToTop from './ScrollToTop';
 
 
 const PageNotFound = () =>{
@@ -31,7 +31,7 @@ function App() {
   return (
       <div>
         <Router>
-        
+        <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />}/>

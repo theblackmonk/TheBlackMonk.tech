@@ -12,7 +12,9 @@ export const aboutObjOne = {
   imgStart: '',
   img: 'images/monk2.jpg',
   alt: 'Vault',
-  linked: '/about'
+  linked: '',
+  exit: 'link',
+  href: 'https://www.linkedin.com/in/davidoneill123/'
 };
 
 export const aboutObjTwo = {
@@ -25,11 +27,13 @@ export const aboutObjTwo = {
     "A year after I bought bitcoin for the first time I read the whitepaper and started to take it seriously. It's built on a fundamentally groundbreaking technology for the internet that I go into more on the bitcoin tab.",
   description2: "For example, the music industry took a huge hit after MP3s became widely distributed on the internet. If Non Fungible Tokens had existed back then, they could've been used to verify where the songs on your mp3 player were purchased from. It's the missing puzzle piece of the internet that allows anything digital to be assigned a value, and assigned scarcity.",
   description3: "With Web 3.0 you can put financial transactions in any of the code, and it's secure. It's a really exciting industry for anyone who likes to dream big and is a programmer, so it only made sense for me.",
-  buttonLabel: 'About Bitcoin',
+  buttonLabel: 'Bitcoin Whitepaper',
   imgStart: 'start',
   img: 'images/monk1.jpg',
   alt: 'Vault',
-  linked: '/about'
+  linked: '/about',
+  exit: 'link',
+  href: 'https://www.miamigov.com/files/sharedassets/public/bitcoin.pdf'
 };
   
   export const aboutObjThree = {

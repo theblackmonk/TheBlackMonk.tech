@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
     padding: 24px;
-    color: #5e0294;
+    color: #000000;
   }
   
   .footer-subscription > p {
@@ -109,7 +109,7 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
   }
   
   .social-icons {
@@ -128,7 +128,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   
   .website-rights {

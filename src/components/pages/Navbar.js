@@ -86,7 +86,7 @@ function Navbar() {
                                 </Link>) : (
                                 <Link to='/youtube' className='btn-link' onClick={closeMobileMenu}>
                                     <Button buttonStyle='btn--outline'
-                                    buttonSize='btn--mobile'>
+                                    buttonSize='btn--mobile' onClick={(e) => {e.preventDefault(); window.location.href='https://www.youtube.com'; }}>
                                     Youtube
                                     </Button>
                                 </Link>

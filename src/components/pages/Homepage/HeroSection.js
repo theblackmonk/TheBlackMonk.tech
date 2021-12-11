@@ -5,7 +5,7 @@ import './HeroSection.css';
 import { ScrollToProjects } from '../../ScrollToTop';
 
 
-function HeroSection({lightBg, topLine, lightText, lightTextDesc, headline, description, description2, description3,
+function HeroSection({lightBg, topLine, lightText, lightTextDesc, headline, description, description2, description3, description4,
 buttonLabel, img, alt, imgStart, linked, exit, href, btn
 }) {
 
@@ -25,8 +25,10 @@ buttonLabel, img, alt, imgStart, linked, exit, href, btn
                                 {description2}</p>
                                 <p className={'home__hero-subtitle dark'}>
                                 {description3}</p>
+                                <p className={'home__hero-subtitle dark'}>
+                                {description4}</p>
                                 
-                                {btn ?! '' : <Link to={linked} >
+                                {btn ? '' : <Link to={linked} >
                                     <Button buttonSize='btn--wide' buttonColor='blue' type="button"
                                         onClick={ exit === 'link' ? (e) => {e.preventDefault(); window.location.href=href; } : ''} >
                                         {buttonLabel}
