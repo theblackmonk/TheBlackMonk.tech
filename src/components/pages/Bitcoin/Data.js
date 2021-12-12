@@ -99,7 +99,7 @@ export const bitObjSix = {
   description3: '',
   buttonLabel: 'See it on video',
   imgStart: '',
-  img: 'images/black wall street.png',
+  img: 'images/bws.jpg',
   alt: 'Vault',
   linked: '/about',
   exit: 'link',

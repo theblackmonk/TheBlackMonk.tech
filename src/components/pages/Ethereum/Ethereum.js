@@ -17,7 +17,7 @@ function Ethereum() {
                 <Card.Title className='top-lines'>What is a smart contract</Card.Title>
                 Banking used to be done entirely on paper. Checks, weekly visits to the bank, no bill automation, etc. Then computers came along, and allowed you to do most of your banking from the comfort of your home.
                 Smart Contracts are the next evolution of banking and many other industries. Rather than trust a bank to hold your money, and confirm credit card transactions, your transactions are handled
-                by a programable contract. This removes the middle man and greatly imporves security. Each individual transaction is as difficult to hack as hacking the entire ethereum network. No more fake credit card skimmers at the gas
+                by a programable contract. This removes the middle man and greatly imporves security, while reducing cost. Each individual transaction is as difficult to hack as hacking the entire ethereum network. No more fake credit card skimmers at the gas
                 station.  
                   
               
