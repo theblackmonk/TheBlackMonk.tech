@@ -236,12 +236,12 @@
     }
   
     .pricing__container-card {
-      width: 80%;
+      width: 92%;
       background: linear-gradient(45deg, #0668fc 0%, #022063 150%);
     }
   
     .pricing__wrapper {
-      margin: 0 10px;
+      margin: 0 0px;
       display: flex;
       flex-direction: column;
       align-items: center;
