@@ -1,6 +1,6 @@
 .home__hero-section {
     color: #fff;
-    padding: 160px 0;
+    padding: 120px 0;
   }
   
   .home__hero-row {
@@ -92,7 +92,7 @@
   
   @media screen and (max-width: 768px) {
     .home__hero-text-wrapper {
-      padding-bottom: 65px;
+      padding-bottom: 0px;
     }
   
     .col {

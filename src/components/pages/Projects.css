@@ -238,6 +238,9 @@
     .pricing__container-card {
       width: 92%;
       background: linear-gradient(45deg, #0668fc 0%, #022063 150%);
+      width: 90%;
+      min-height: 520px;
+      border-radius: 8px;
     }
   
     .pricing__wrapper {
