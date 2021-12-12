@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: 'Passion',
   headline: 'I clearly remember',
   description:
-    'when my parents bought Microsoft Office 2007. Even though it would get me in trouble, I snuck into the office, opened the packaging, and popped in the installation cd when it was vacant. I had just turned 11 but I had developed a strategy for learning computers fast. I would start at the first button and click every possible setting sequentially until I understood. It was not long until I was the family computer expert.',
+    'When my parents bought Microsoft Office 2007. Even though it would get me in trouble, I snuck into the office, opened the packaging, and popped in the installation cd when it was vacant. I had just turned 11 but I had developed a strategy for learning computers fast. I would start at the first button and click every possible setting sequentially until I understood. It was not long until I was the family computer expert.',
   buttonLabel: 'View My Latest Projects',
   imgStart: 'start',
   img: 'images/office-2007.png',
