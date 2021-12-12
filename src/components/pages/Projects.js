@@ -25,8 +25,8 @@ function Projects() {
                 <br></br>
                 <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
-                  <li>Reduce scammers, pay vendor directly</li>
-                  <li>Money is stored in a secure smart contract</li>
+                  <li>Reduce scams with transparency</li>
+                  <li>Smart-contract pays vendor directly</li>
                   <li>No trusting third parties holding funds</li>
                   <li>Verify who recieved the money</li>
                 </ul>
