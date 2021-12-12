@@ -10,11 +10,11 @@ export const homeObjOne = {
     description:
       //'Meditation. Routine. Balance to modern life Growing up in highschool with cellphones',
       'Full Stack Ethereum Developer. Tech Enthusiast. University of Michigan Graduate.',
-    buttonLabel: 'My Portfolio',
+    buttonLabel: 'About Me',
     imgStart: '',
     img: 'images/suit-3.png',
     alt: 'Credit Card',
-    linked: '/projects'
+    linked: '/about'
 };
 
 //my passion for blockchain
@@ -44,7 +44,7 @@ export const homeObjThree = {
     headline: 'Formal + Self-taught',
     description:
     "I was first introduced to coding in highschool when I joined my local First Robotics Club. Team 3414 Hackbots. We made it to Worlds in 2013!",
-    description2: "I graduated from the University of Michigan in 2019 with a degree in Electrical Engineering. I took several classes for C, C++, Java, and Android Studio. Then I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on youtube.",
+    description2: "I graduated from the University of Michigan in 2019 with a degree in Electrical Engineering. I took several classes for C, C++, Java, and Android Studio. Then I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on Youtube.",
     description3: '',
     buttonLabel: 'Past Work Experience',
     imgStart: '',
@@ -66,7 +66,7 @@ export const homeObjThree = {
     topLine: 'Youtube Channel',
     headline: 'TheBlackMonk',
     description:
-      "January 2021 I typed out my New Year's Resolution to become a Blockchain Developer. Along the way I got into the bitcoin whitepaper, Bitcoin Miami, Austrian Economics, NFTs, and a network of people creating a decentralized future. January 2022 I am documenting my daily routine as I learn to create applications on ethereum",
+      "January 2021, I typed out my New Year's Resolution to become a Blockchain Developer. Along the way I got into the Bitcoin whitepaper, Bitcoin Miami, Austrian Economics, NFTs, and a network of people creating a decentralized future. As of January 2022 I am documenting my daily routine as I learn to create applications on Ethereum.",
     buttonLabel: 'Watch Now',
     imgStart: 'start',
     img: 'images/newyear2.png',
@@ -86,7 +86,7 @@ export const homeObjThree = {
     topLine: 'Why',
     headline: 'ReactJS and Solidity?',
     description:
-    'I believe in a decentralized future and maintaining human sovereignty as we transition from the physical world into the digital world. At the moment this concept is being tested on ethereum. Which is why I have decided to learn ReactJS and Solidity, two common and versatile languages to make DAPPS',
+    'I believe in a decentralized future and maintaining human sovereignty as we transition from the physical world into the digital world. At the moment this concept is being tested on Ethereum. Which is why I have decided to learn ReactJS and Solidity, two common and versatile languages to make DAPPS.',
     buttonLabel: 'Learn More',
     imgStart: 'start',
     img: 'images/blockchain.png',

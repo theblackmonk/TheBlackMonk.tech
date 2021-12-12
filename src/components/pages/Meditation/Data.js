@@ -6,7 +6,7 @@ export const medObjOne = {
   headline: 'A currency',
   description:
   "Every action must have an equal and opposite reaction. The emergence of technology has created a battle for your attention. Facebook reported $29 billion in revenue from June 2020 to June 2021. The bulk of this is from ad revenue. The model is simple. Provide social, news, and entertainment value on a world class software application to anyone for free. The catch, users agree to be advertised products based on their online activity at the cost of privacy.", 
-  description2: "With technology we can shortcut our evolutionary triggers and get guaranteed dopamine hits by playing candy crush in our bed. If you're like me you know this can have negative side effects if abused. Meditation is one way I balance the daily stimulation, and keep my ability to focus for long periods of time.",
+  description2: "With technology we can shortcut our evolutionary triggers and get guaranteed dopamine hits by playing candy crush in our bed. If you're like me, you know this can have negative side effects if abused. Meditation is one way I balance the daily stimulation and keep my ability to focus for long periods of time.",
   description3: 'No products, nothing to sell, free for anyone and everyone with no catch.',
   buttonLabel: 'Free App',
   imgStart: '',

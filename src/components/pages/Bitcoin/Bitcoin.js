@@ -28,7 +28,7 @@ function Bitcoin() {
                   <br /><br />
                   
                   If you are new to bitcoin, don't think of it as a currency. It will become a currency eventually, but today think of it like this.
-                  Bitcoin is a brand new asset class. New asset classes are rare, and always benefit early investors. (Stocks, Real Estate, Forex) If you were not born
+                  Bitcoin is a brand-new asset class. New asset classes are rare, and always benefit early investors. (Stocks, Real Estate, Forex) If you were not born
                   with a trust fund, a significant inheritance, or into a successful family business, you now have a unique advantage. It is the Early Mover Advantage, by the time you pass on your bitcoin to your children, and grandchildren, and great grandchildren it will
                   be the equivalent of everything mentioned above.
                   
@@ -36,18 +36,18 @@ function Bitcoin() {
                   <Card.Title className='top-lines'>There are many critiques of bitcoin</Card.Title>It's too slow, it uses too much power, it's too volatile, etc.
                   You must understand that bitcoin is a computer program and is therefore not bound to the exact rules of physical currency.<br></br><br></br>
                   
-                  To put this into perspective imagine the governement could program the US dollar.
-                  Whenever an item is purchased and taxes are payed, 0.1% of those taxes is removed from circulation.
+                  To put this into perspective imagine the government could program the US dollar.
+                  Whenever an item is purchased and taxes are paid, 0.1% of those taxes is removed from circulation.
                   On a nationwide scale this would add up, and mean hundreds of thousands of dollars would be taken out of circulation.
-                  The program would execute whenever inflation is above 3% and programatically bring it back to 0%
+                  The program would execute whenever inflation is above 3% and programmatically bring it back to 0%
                   <br></br><br></br>
-                  Ethereum made a similar upgrade to their currency in the August 2021 with the EIP-1559 upgrade. Every transaction removes a small amount of ethereum from circulation, making the entire currency deflationary.
+                  Ethereum made a similar upgrade to their currency in the August 2021 with the EIP-1559 upgrade. Every transaction removes a small amount of Ethereum from circulation, making the entire currency deflationary.
                   If no new people buy in, but people continue to transact, the price will continue to rise as supply drops.
                   <hr class="rounded"></hr>
                   
                   <Card.Title className='top-lines'>Comparing Crypto Currency to Fiat Currency</Card.Title> 
                   such as the Dollar, Pound, or Yen is like comparing a Ford Model T to the horse.
-                  It's arguable a horse was better than the Model T at that time. However, the horse was starting to decline, and the Model T was a techonology
+                  It's arguable a horse was better than the Model T at that time. However, the horse was starting to decline, and the Model T was a technology
                   with endless upgrades and improvements in it's future. Bitcoin has had more than 50 upgrades and will continue to improve in the future.
                   <br></br><br></br>  
                   The gap in superiority between Crypto Currency and Fiat Currency will continue to grow until every government ensures their fiat currency is completely digital.
@@ -58,7 +58,7 @@ function Bitcoin() {
                 Each person votes with their dollars what the next currency monopoly will be.
 
                   <br></br><br></br>  
-                  Our current financial system is ruled by the Federal Reserve, Quantataive Easing, Money Printing, and Fractional Reserve banking.
+                  Our current financial system is ruled by the Federal Reserve, Quantitative Easing, Money Printing, and Fractional Reserve banking.
                   <br></br><br></br>  
                   “It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.” ― Henry Ford.
                   <br></br><br></br>

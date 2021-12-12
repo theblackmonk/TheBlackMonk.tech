@@ -6,7 +6,7 @@ export const aboutObjOne = {
   headline: 'Formal + Self-taught',
   description:
   "I was first introduced to coding in highschool when I joined my local First Robotics Club. Team 3414 Hackbots. We made it to Worlds in 2013!",
-  description2: "I graduated the University of Michigan in 2019 with a degree in Electrical Engineering. I took several classes for C, C++, Java, and Android Studio. Then I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on youtube.",
+  description2: "I graduated the University of Michigan in 2019 with a degree in Electrical Engineering. I took several classes for C, C++, Java, and Android Studio. Then I worked on embedded systems for 2 years as a software engineer at Johnson and Johnson. During this time, I taught myself ReactJS + Solidity and recorded my journey on Youtube.",
   description3: '',
   buttonLabel: 'Linked In',
   imgStart: '',
@@ -24,9 +24,9 @@ export const aboutObjTwo = {
   topLine: 'The Future of',
   headline: 'Blockchain',
   description:
-    "A year after I bought bitcoin for the first time I read the whitepaper and started to take it seriously. It's built on a fundamentally groundbreaking technology for the internet that I go into more on the bitcoin tab.",
-  description2: "For example, the music industry took a huge hit after MP3s became widely distributed on the internet. If Non Fungible Tokens had existed back then, they could've been used to verify where the songs on your mp3 player were purchased from. It's the missing puzzle piece of the internet that allows anything digital to be assigned a value, and assigned scarcity.",
-  description3: "With Web 3.0 you can put financial transactions in any of the code, and it's secure. It's a really exciting industry for anyone who likes to dream big and is a programmer, so it only made sense for me.",
+    "A year after I bought bitcoin for the first time, I read the whitepaper and started to take it seriously. It's built on a fundamentally groundbreaking technology for the internet that I go into more on the bitcoin tab.",
+  description2: "For example, the music industry took a huge hit after MP3s became widely distributed on the internet. If Non-Fungible Tokens had existed back then, they could've been used to verify where the songs on your mp3 player were purchased from. It's the missing puzzle piece of the internet that allows anything digital to be assigned a value and assigned scarcity.",
+  description3: "With Web 3.0 you can put financial transactions in any of the code, and it's secure. It's an exciting industry for anyone who likes to dream big and is a programmer, so it only made sense for me.",
   buttonLabel: 'Bitcoin Whitepaper',
   imgStart: 'start',
   img: 'images/monk1.jpg',

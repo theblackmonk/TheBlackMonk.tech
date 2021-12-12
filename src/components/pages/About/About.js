@@ -18,9 +18,9 @@ function About() {
               
                 <Card.Text className='body'>
                 <Card.Title className='top-line'>Behind the name</Card.Title>
-                  In the TV show DragonBall Z, Goku enters the Hyperbolic Time Chamber.
+                  In the TV show Dragon Ball Z, Goku enters the Hyperbolic Time Chamber.
                   Facing an alien invader that is too powerful, Goku stays in the chamber to train and get stronger. One year inside the time chamber is
-                  one day to everyone outside, and allows you to make one years progress in one day.
+                  one day to everyone outside and allows you to make one year's progress in one day.
                   The environment inside has ten times the gravity of earth and is completely empty and devoid of distractions. 
                 </Card.Text>
                 <Card.Text className='body'>Focus is nothing more than the absence of distraction.

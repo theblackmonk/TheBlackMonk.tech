@@ -72,7 +72,7 @@ function Projects() {
                   <li>Fundraising made easy</li>
                   <li>Collect 32 ETH from your network</li>
                   <li>Full transparency of validator shares</li>
-                  <li>Practice start to finish on testnet</li>
+                  <li>Practice start to finish on test net</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='primary'
                 onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }}>

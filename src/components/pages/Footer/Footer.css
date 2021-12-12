@@ -157,4 +157,12 @@
     .social-media-wrap {
       flex-direction: column;
     }
+
+    .social-logo {
+      margin-left: 0px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    
   }
