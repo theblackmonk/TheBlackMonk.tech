@@ -57,7 +57,7 @@ function Wallet() {
                   
                   <hr class="rounded"></hr>
                   
-                  <Card.Title className='top-lines'>Transfering your money</Card.Title> 
+                  <Card.Title className='top-lines'>Transferring your money</Card.Title> 
                   Youtube will be your best resource for this part.
                   <br /><br />
                   
@@ -66,7 +66,7 @@ function Wallet() {
 
                   <br />I use Voyager for long term holds, or Binance US for the low fees.
                   <br></br><br></br>  
-                  Youtube search "transfering bitcoin from coinbase to wallet"
+                  Youtube search "transferring bitcoin from coinbase to wallet".
                   <br /><br />
                   Open Atomic Wallet. Click on bitcoin and click recieve. This is your bitcoin public address.
                   <br />It will look like this: 1ZSDoJ2mBgvLYx7x54bP1DV15jbwJCWq6R<br />
@@ -74,7 +74,7 @@ function Wallet() {
                   <br />Anyone with this address can send you bitcoin. There will be fees, so I like to make occasional large transfers. 
                   <br></br><br></br>  
                   Feel free to transfer a little bit first, just to make sure it works.
-                  <br /> It may take around 20 minutes for the money to show in Atomic Wallet depending on network congestion
+                  <br /> It may take around 20 minutes for the money to show in Atomic Wallet depending on network congestion.
                 
 
                 </Card.Text>
