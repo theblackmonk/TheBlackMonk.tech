@@ -11,6 +11,7 @@ import Ethereum from '../components/pages/Ethereum/Ethereum';
 import Meditation from '../components/pages/Meditation/Meditation';
 import Youtube from '../components/pages/Youtube/Youtube';
 import Projects from './pages/Projects';
+import Wallet from '../components/pages/Wallet/Wallet';
 import ScrollToTop from './ScrollToTop';
 
 
@@ -41,6 +42,7 @@ function App() {
             <Route path='/meditation' element={<Meditation />}/>
             <Route path='/youtube' element={<Youtube />}/>
             <Route path='/projects' element={<Projects />}/>
+            <Route path='/wallet' element={<Wallet />}/>
             
           </Routes>
           <Footer />
