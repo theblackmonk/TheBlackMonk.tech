@@ -43,7 +43,8 @@ function Projects() {
                 </div>
                 <h3>Ethereum token exchange</h3>
                 <h7>DAPP univerisity tutorial</h7>
-                <br></br>
+                <h7>Requires Rinkeby Test Network!</h7>
+               
                 <br></br>
                 <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
