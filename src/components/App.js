@@ -12,6 +12,7 @@ import Meditation from '../components/pages/Meditation/Meditation';
 import Youtube from '../components/pages/Youtube/Youtube';
 import Projects from './pages/Projects';
 import Wallet from '../components/pages/Wallet/Wallet';
+import MT6 from '../components/pages/MT6/MT6';
 import ScrollToTop from './ScrollToTop';
 
 
@@ -43,6 +44,7 @@ function App() {
             <Route path='/youtube' element={<Youtube />}/>
             <Route path='/projects' element={<Projects />}/>
             <Route path='/wallet' element={<Wallet />}/>
+            <Route path='/MT6' element={<MT6 />}/>
             
           </Routes>
           <Footer />
