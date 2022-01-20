@@ -53,7 +53,7 @@ function Projects() {
                   <li>No blacklisting</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='blue'
-                onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }}>
+                onClick={(e) => {e.preventDefault(); window.location.href='https://stackincoins.com'; }}>
                   View Here 
                 </Button>
               </div>
