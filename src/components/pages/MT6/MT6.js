@@ -103,7 +103,7 @@ function Buy() {
           'side': 'Buy'
         }))['orderID'];
         await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
-        await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
+        //await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
       
       }
       
