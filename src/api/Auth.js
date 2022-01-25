@@ -57,7 +57,7 @@ function v4_mk_request(method, path, body) {
   });
 }
 
-async function run() {
+/*async function run() {
     const order_id_v4 = (await v4_mk_request('POST', '/api/v4/order', {
      'ordType': 'Limit',
        'symbol': 'BTCUSD',
@@ -74,7 +74,7 @@ async function run() {
         //await v4_mk_request('GET', '/api/2/BTCUSD/MONEY/TICKER') //24 hour high 24 hour low #last price
         //await v4_mk_request('POST', '/api/3/ACCOUNT');    
     }
-    run();
+    run(); */
 
 
 

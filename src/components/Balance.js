@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
+import { render } from 'react-dom'
 import { Tabs, Tab } from 'react-bootstrap'
 import Spinner from './Spinner'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+import { setUncaughtExceptionCaptureCallback } from 'process'
 
 const https = require('https');
 const crypto = require('crypto');
 
 const exchangeBalance = 10
 const portfolioBalance = 200
+
 
 const showForm = () => {
   
@@ -166,9 +169,52 @@ const showForm = () => {
 
 }
 
-class Balance extends Component {
+var one, two, three, four, five, six
+let info
+var users = {
+  name: 'Dave',
+  hobbies: ['Sports']
+};
+
+function Balance() {
   
-    render() {
+    //useState() //pass in default state. useState always returns an array with two values [current state, function that lets us update state]
+    Buy()
+    let [ones, setOnes] = useState()
+    let [twos, setTwos] = useState()
+    let [threes, setThrees] = useState()
+    let [fours, setFours] = useState()  
+
+
+    const MINUTE_MS = 3000;
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        //Buy()
+        update()
+        console.log('running')
+      }, MINUTE_MS);
+    
+      return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+    }, [])
+
+      
+      
+
+      function update() {
+        one = info[0].askPrice
+        two = info[0].bidPrice
+        three = info[0].lastPrice
+        four = info[0].updateTime
+
+        setOnes(ones = one)
+        setTwos(twos = two)
+        setThrees(threes = three)
+        setFours(fours = four)
+        //setCount(prevCount => prevCount -1)
+        //console.log(infos = extra)
+      }
+
       return (
         <div className="card bg-dark text-white">
           <div className="card-header">
@@ -176,23 +222,51 @@ class Balance extends Component {
           </div>
           <div className="card-body">
           <Button onClick={Buy}>Buy</Button>
+          <br />
+          <br />
+          <Button onClick={update}>Update</Button>
+          <p>Ask Price: {ones} </p>
+          <p>Bid Price: {twos} </p>
+          <p>Last Price: {threes} </p>
+          <p>updateTime: {fours} </p>
+          
+          
           </div>
         </div>
       )
-    }
+    
   }
 
   
+
+  //<p>{info[0].askPrice ? info[0].askPrice : ''}</p>
+  //<p>{info[0].bidPrice ? info[0].bidPrice : ''}</p>
   function Buy() {
-    const host = 'trade-am.oslsandbox.com';
-    const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6';
-    const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w==';
+
+    
+    const host = 'trade-am.osl.com';
+    const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
+    const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
     function response_as_json(resolve, reject) {
         return function(res) {
           let str = '';
           res.on('data', function (chunk) { str += chunk; });
           res.on('end', function (arg) {
-            console.log(JSON.parse(str));
+            
+            info = JSON.parse(str)
+            //infos = info[0].askPrice
+            
+            //console.log('ask price:', info[0].askPrice);
+            //console.log('bid price:',info[0].bidPrice);
+            //console.log('currency:',info[0].currency);
+            //console.log('last price:',info[0].lastPrice);
+            //console.log('maxOrderQty:',info[0].maxOrderQty);
+            //console.log('minOrderQty:',info[0].minOrderQty);
+            //console.log('price decimals:',info[0].priceDecimals);
+            //console.log('quantity decimals:',info[0].quantityDecimals);
+            //console.log('update time:',info[0].updateTime);
+            console.log('Buy Function Run');
+
             ((res.statusCode >= 200 && res.statusCode < 300) ? resolve : reject)(str ? JSON.parse(str) : '');
           });
         }
@@ -235,20 +309,21 @@ class Balance extends Component {
       }
       
       async function run() {
-        const order_id_v4 = (await v4_mk_request('POST', '/api/v4/order', {
+        /*const order_id_v4 = (await v4_mk_request('POST', '/api/v4/order', {
           'ordType': 'Market',
           'symbol': 'BTCUSD',
           'orderQty': '0.001',
           //'price': '39000',
           'side': 'Buy'
-        }))['orderID'];
-        await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
+        }))['orderID'];*/
+        //await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
         //await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
-      
+        await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
+        //await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
       }
       
       run();
-      console.log("buy success")
+      console.log("end of function")
 
 } 
 
