@@ -15,7 +15,7 @@ function Pricing() {
     let [threes, setThrees] = useState()
     let [fours, setFours] = useState()
 
-    const MINUTE_MS = 150000;
+    const MINUTE_MS = 1500;
 
     useEffect(() => {
       const interval = setInterval(() => {
