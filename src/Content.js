@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Trades  from './components/Trades' 
+import Pricing  from './components/Pricing' 
 import Balance from './components/Balance'
 import NewOrder from './components/NewOrder'
 import OrderBook from './components/OrderBook'
@@ -23,7 +23,7 @@ class Content extends Component {
                 <PriceChart />
                 <MyTransactions />
             </div>
-        <Trades />
+        <Pricing />
       </div>
   );
   }

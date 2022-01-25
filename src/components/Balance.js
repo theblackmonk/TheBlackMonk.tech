@@ -4,13 +4,15 @@ import { Tabs, Tab } from 'react-bootstrap'
 import Spinner from './Spinner'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import { setUncaughtExceptionCaptureCallback } from 'process'
+
 
 const https = require('https');
 const crypto = require('crypto');
 
 const exchangeBalance = 10
 const portfolioBalance = 200
+
+Buy();
 
 
 const showForm = () => {
@@ -179,18 +181,18 @@ var users = {
 function Balance() {
   
     //useState() //pass in default state. useState always returns an array with two values [current state, function that lets us update state]
-    Buy()
+    //Buy()
     let [ones, setOnes] = useState()
     let [twos, setTwos] = useState()
     let [threes, setThrees] = useState()
     let [fours, setFours] = useState()  
 
 
-    const MINUTE_MS = 3000;
+    const MINUTE_MS = 1500;
 
     useEffect(() => {
       const interval = setInterval(() => {
-        //Buy()
+        Buy()
         update()
         console.log('running')
       }, MINUTE_MS);
@@ -221,14 +223,10 @@ function Balance() {
             Balance
           </div>
           <div className="card-body">
-          <Button onClick={Buy}>Buy</Button>
-          <br />
-          <br />
-          <Button onClick={update}>Update</Button>
-          <p>Ask Price: {ones} </p>
-          <p>Bid Price: {twos} </p>
-          <p>Last Price: {threes} </p>
-          <p>updateTime: {fours} </p>
+          
+          
+          <Button >Get Balance</Button>
+          
           
           
           </div>
@@ -241,7 +239,7 @@ function Balance() {
 
   //<p>{info[0].askPrice ? info[0].askPrice : ''}</p>
   //<p>{info[0].bidPrice ? info[0].bidPrice : ''}</p>
-  function Buy() {
+  async function Buy() {
 
     
     const host = 'trade-am.osl.com';
