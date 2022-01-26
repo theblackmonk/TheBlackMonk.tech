@@ -184,7 +184,7 @@ function Balance() {
       return (
         <div className="card bg-dark text-white">
           <div className="card-header">
-            Balance
+            Balance (adding soon)
           </div>
           <div className="card-body">
           
@@ -212,20 +212,6 @@ function Balance() {
           let str = '';
           res.on('data', function (chunk) { str += chunk; });
           res.on('end', function (arg) {
-            
-            info = JSON.parse(str)
-            //infos = info[0].askPrice
-            
-            //console.log('ask price:', info[0].askPrice);
-            //console.log('bid price:',info[0].bidPrice);
-            //console.log('currency:',info[0].currency);
-            //console.log('last price:',info[0].lastPrice);
-            //console.log('maxOrderQty:',info[0].maxOrderQty);
-            //console.log('minOrderQty:',info[0].minOrderQty);
-            //console.log('price decimals:',info[0].priceDecimals);
-            //console.log('quantity decimals:',info[0].quantityDecimals);
-            //console.log('update time:',info[0].updateTime);
-            console.log('Buy Function Run');
 
             ((res.statusCode >= 200 && res.statusCode < 300) ? resolve : reject)(str ? JSON.parse(str) : '');
           });
