@@ -10,10 +10,10 @@ let info
 GrabPrice();
 
 function Pricing() {
-    let [ones, setOnes] = useState('000')
-    let [twos, setTwos] = useState('000')
-    let [threes, setThrees] = useState('000')
-    let [fours, setFours] = useState('000')
+    let [ones, setOnes] = useState()
+    let [twos, setTwos] = useState()
+    let [threes, setThrees] = useState()
+    let [fours, setFours] = useState()
 
     const MINUTE_MS = 1000;
 
