@@ -5,7 +5,7 @@ const https = require('https');
 const crypto = require('crypto');
 
 var one, two, three, four, five, six
-let info = [ 'dave', 'bob']
+let info
 
 GrabPrice();
 
