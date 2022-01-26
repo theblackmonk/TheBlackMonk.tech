@@ -1,5 +1,8 @@
-const https = require('https');
-const crypto = require('crypto');
+import https from 'http'
+import crypto from 'crypto'
+
+//const https = require('https');
+//const crypto = require('crypto');
 
 const host = 'trade-am.oslsandbox.com';
 const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6';

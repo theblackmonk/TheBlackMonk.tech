@@ -3,11 +3,12 @@ import Button from 'react-bootstrap/Button'
 import axios from "axios";
 import { API_URL } from "../setupProxy";
 axios.defaults.withCredentials = true;
+import https from 'https'
+import crypto from 'crypto'
 
 
-
-const https = require('https');
-const crypto = require('crypto');
+//const https = require('https');
+//const crypto = require('crypto');
 
 var one, two, three, four, five, six
 let info
@@ -169,7 +170,7 @@ function GrabPrice() {
           if (body) {
             headers['Content-Length'] = Buffer.byteLength(body_str);
           }
-          const opt = { host, method, path, headers };
+          const opt = { API_URL, method, path, headers };
           console.log('opt: ',opt)
           console.log('time 1: ', tonce)
           const req = https.request(opt, response_as_json(resolve, reject));

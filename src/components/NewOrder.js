@@ -1,9 +1,10 @@
 import { BADQUERY } from 'dns'
 import React, { Component } from 'react'
 import { Tabs, Tab } from 'react-bootstrap'
-
-const https = require('https');
-const crypto = require('crypto');
+import https from 'https'
+import crypto from 'crypto'
+//const https = require('https');
+//const crypto = require('crypto');
 
 
 const showForm = () => {

@@ -4,10 +4,11 @@ import { Tabs, Tab } from 'react-bootstrap'
 import Spinner from './Spinner'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+import https from 'https'
+import crypto from 'crypto'
 
-
-const https = require('https');
-const crypto = require('crypto');
+//const https = require('https');
+//const crypto = require('crypto');
 
 const exchangeBalance = 10
 const portfolioBalance = 200

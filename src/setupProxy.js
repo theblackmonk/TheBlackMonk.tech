@@ -1,4 +1,4 @@
-import { createProxyMiddleware } from 'http-proxy-middleware'
+const { creatProxyMiddleware } = require("http-proxy-middleware")
 
 export const API_URL = 'https://trade-am.osl.com'
 
