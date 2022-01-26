@@ -12,7 +12,7 @@ const crypto = require('crypto');
 const exchangeBalance = 10
 const portfolioBalance = 200
 
-Buy();
+//Buy();
 
 
 const showForm = () => {
@@ -188,7 +188,7 @@ function Balance() {
     let [fours, setFours] = useState()  
 
 
-    const MINUTE_MS = 1500;
+    const MINUTE_MS = 15000000;
 
     useEffect(() => {
       const interval = setInterval(() => {

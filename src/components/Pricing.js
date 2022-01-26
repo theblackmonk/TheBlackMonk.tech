@@ -5,29 +5,31 @@ const https = require('https');
 const crypto = require('crypto');
 
 var one, two, three, four, five, six
-let info
+let info = [ 'dave', 'bob']
 
 GrabPrice();
 
 function Pricing() {
-    let [ones, setOnes] = useState()
-    let [twos, setTwos] = useState()
-    let [threes, setThrees] = useState()
-    let [fours, setFours] = useState()
+    let [ones, setOnes] = useState('000')
+    let [twos, setTwos] = useState('000')
+    let [threes, setThrees] = useState('000')
+    let [fours, setFours] = useState('000')
 
-    const MINUTE_MS = 1500;
+    const MINUTE_MS = 5000;
 
     useEffect(() => {
       const interval = setInterval(() => {
         GrabPrice()
         update()
-        console.log('running')
+        console.log('loop')
       }, MINUTE_MS);
     
       return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
     }, [])
 
     function update() {
+        if(info[0].askPrice !== undefined){
+
         one = info[0].askPrice
         two = info[0].bidPrice
         three = info[0].lastPrice
@@ -39,13 +41,16 @@ function Pricing() {
         setFours(fours = four)
         //setCount(prevCount => prevCount -1)
         //console.log(infos = extra)
+        } else {
+          console.log('no value')
+        }
       }
 
     
   return (
     <div className="card bg-dark text-white">
         <div className="card-header">
-            OSL Pricing
+            OSL Pricing (Once per second)
         </div>
         <div className="card-body">
             <table className="table table-dark table-sm small">
@@ -99,18 +104,20 @@ function Pricing() {
           <p>updateTime: {fours} </p>
 */
 
-async function GrabPrice() {
+function GrabPrice() {
 
-    
-    const host = 'trade-am.osl.com';
+    //trade-am.osl.com
+    const host = '';
     const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
     const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
+    console.log("beginning of function")
     function response_as_json(resolve, reject) {
         return function(res) {
           let str = '';
           res.on('data', function (chunk) { str += chunk; });
           res.on('end', function (arg) {
             
+            console.log('before json assign');
             info = JSON.parse(str)
             //infos = info[0].askPrice
             
@@ -123,7 +130,7 @@ async function GrabPrice() {
             //console.log('price decimals:',info[0].priceDecimals);
             //console.log('quantity decimals:',info[0].quantityDecimals);
             //console.log('update time:',info[0].updateTime);
-            console.log('Buy Function Run');
+            console.log('after json assign');
 
             ((res.statusCode >= 200 && res.statusCode < 300) ? resolve : reject)(str ? JSON.parse(str) : '');
           });
@@ -142,7 +149,7 @@ async function GrabPrice() {
         }
         return gen_sig_helper(secret, data);
       }
-      
+      console.log("middle of function")
       function v4_mk_request(method, path, body) {
         console.log(`=> ${method} ${path}`);
         return new Promise((resolve, reject) => {
@@ -158,7 +165,11 @@ async function GrabPrice() {
             headers['Content-Length'] = Buffer.byteLength(body_str);
           }
           const opt = { host, method, path, headers };
+          console.log('opt: ',opt)
+          console.log('time 1: ', tonce)
           const req = https.request(opt, response_as_json(resolve, reject));
+          console.log('req: ',req)
+          console.log('body_str: ',body_str)
           if (body) {
             req.write(body_str);
           }
