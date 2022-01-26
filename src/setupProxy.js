@@ -1,7 +1,5 @@
 const { creatProxyMiddleware } = require("http-proxy-middleware")
 
-export const API_URL = 'https://trade-am.osl.com'
-
 export default app => {
     
     app.use(cors({

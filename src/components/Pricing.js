@@ -2,9 +2,9 @@ import React, { Component, useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
 import axios from "axios";
 import { API_URL } from "../setupProxy";
-axios.defaults.withCredentials = true;
 import https from 'https'
 import crypto from 'crypto'
+//axios.defaults.withCredentials = true;
 
 
 //const https = require('https');
@@ -113,7 +113,7 @@ function Pricing() {
 function GrabPrice() {
 
     //trade-am.osl.com
-    const host = '';
+    const host = 'trade-am.osl.com';
     const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
     const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
     console.log("beginning of function")
@@ -170,7 +170,7 @@ function GrabPrice() {
           if (body) {
             headers['Content-Length'] = Buffer.byteLength(body_str);
           }
-          const opt = { API_URL, method, path, headers };
+          const opt = { host, method, path, headers };
           console.log('opt: ',opt)
           console.log('time 1: ', tonce)
           const req = https.request(opt, response_as_json(resolve, reject));
@@ -220,7 +220,7 @@ function GrabPrice() {
         }))['orderID'];*/
         //await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
         //await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
-        await v4_mk_request('GET', axios.get(`${API_URL}/api/v4/instrument?symbol=BTCUSD`));
+        await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
         //await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
       }
       
