@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
 import axios from "axios";
-import { API_URL } from "../../setupProxy";
+import { API_URL } from "../setupProxy";
 axios.defaults.withCredentials = true;
 
 
