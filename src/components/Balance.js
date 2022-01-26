@@ -12,7 +12,6 @@ const crypto = require('crypto');
 const exchangeBalance = 10
 const portfolioBalance = 200
 
-//Buy();
 
 
 const showForm = () => {
@@ -171,51 +170,16 @@ const showForm = () => {
 
 }
 
-var one, two, three, four, five, six
-let info
-var users = {
-  name: 'Dave',
-  hobbies: ['Sports']
-};
+
+
 
 function Balance() {
   
     //useState() //pass in default state. useState always returns an array with two values [current state, function that lets us update state]
-    //Buy()
-    let [ones, setOnes] = useState()
-    let [twos, setTwos] = useState()
-    let [threes, setThrees] = useState()
-    let [fours, setFours] = useState()  
+   
 
-
-    const MINUTE_MS = 15000000;
-
-    useEffect(() => {
-      const interval = setInterval(() => {
-        Buy()
-        update()
-        console.log('running')
-      }, MINUTE_MS);
     
-      return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-    }, [])
-
       
-      
-
-      function update() {
-        one = info[0].askPrice
-        two = info[0].bidPrice
-        three = info[0].lastPrice
-        four = info[0].updateTime
-
-        setOnes(ones = one)
-        setTwos(twos = two)
-        setThrees(threes = three)
-        setFours(fours = four)
-        //setCount(prevCount => prevCount -1)
-        //console.log(infos = extra)
-      }
 
       return (
         <div className="card bg-dark text-white">
@@ -237,8 +201,6 @@ function Balance() {
 
   
 
-  //<p>{info[0].askPrice ? info[0].askPrice : ''}</p>
-  //<p>{info[0].bidPrice ? info[0].bidPrice : ''}</p>
   async function Buy() {
 
     
@@ -316,11 +278,11 @@ function Balance() {
         }))['orderID'];*/
         //await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
         //await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
-        await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
+        //await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
         //await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
       }
       
-      run();
+      //run();
       console.log("end of function")
 
 } 

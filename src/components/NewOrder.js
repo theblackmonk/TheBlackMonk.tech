@@ -121,8 +121,8 @@ function NewOrder() {
 
 function Buy() {
 
-    
-  const host = 'trade-am.oslsandbox.com'
+    //trade-am.oslsandbox.com
+  const host = ''
 const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
 const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
   function response_as_json(resolve, reject) {
@@ -206,8 +206,8 @@ const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HA
 
 function Sell() {
 
-    
-  const host = 'trade-am.oslsandbox.com'
+    //trade-am.oslsandbox.com
+  const host = ''
 const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
 const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
   function response_as_json(resolve, reject) {

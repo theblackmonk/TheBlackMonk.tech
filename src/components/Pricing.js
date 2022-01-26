@@ -28,7 +28,7 @@ function Pricing() {
     }, [])
 
     function update() {
-        if(info[0].askPrice !== undefined){
+        //if(info[0].askPrice !== undefined){
 
         one = info[0].askPrice
         two = info[0].bidPrice
@@ -41,9 +41,9 @@ function Pricing() {
         setFours(fours = four)
         //setCount(prevCount => prevCount -1)
         //console.log(infos = extra)
-        } else {
-          console.log('no value')
-        }
+        //} else {
+         // console.log('no value')
+        //}
       }
 
     
@@ -151,6 +151,33 @@ function GrabPrice() {
       }
       console.log("middle of function")
       function v4_mk_request(method, path, body) {
+        console.log(`=> ${method} ${path}`);
+        return new Promise((resolve, reject) => {
+          const tonce = Math.floor(Date.now() / 1000) + 10;
+          const body_str = JSON.stringify(body);
+          const headers = {
+            'api-key': key,
+            'api-signature': v4_gen_sig(secret, method, path, tonce, body_str),
+            'api-expires': tonce,
+            'Content-Type': 'application/json'
+          }
+          if (body) {
+            headers['Content-Length'] = Buffer.byteLength(body_str);
+          }
+          const opt = { host, method, path, headers };
+          console.log('opt: ',opt)
+          console.log('time 1: ', tonce)
+          const req = https.request(opt, response_as_json(resolve, reject));
+          console.log('req: ',req)
+          console.log('body_str: ',body_str)
+          if (body) {
+            req.write(body_str);
+          }
+          req.end();
+        });
+      }
+
+      function v4_mkdp_request(method, path, body) {
         console.log(`=> ${method} ${path}`);
         return new Promise((resolve, reject) => {
           const tonce = Math.floor(Date.now() / 1000) + 10;
