@@ -122,9 +122,13 @@ function NewOrder() {
 function Buy() {
 
     //trade-am.oslsandbox.com
-  const host = ''
-const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
-const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
+  //const host = ''
+//const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
+//const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
+
+    const host = '';
+    const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
+    const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
   function response_as_json(resolve, reject) {
       return function(res) {
         let str = '';
@@ -207,9 +211,13 @@ const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HA
 function Sell() {
 
     //trade-am.oslsandbox.com
-  const host = ''
-const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
-const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
+  //const host = ''
+//const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
+//const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
+    const host = '';
+    const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
+    const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
+
   function response_as_json(resolve, reject) {
       return function(res) {
         let str = '';

@@ -1,5 +1,10 @@
 import React, { Component, useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
+import axios from "axios";
+import { API_URL } from "../../setupProxy";
+axios.defaults.withCredentials = true;
+
+
 
 const https = require('https');
 const crypto = require('crypto');
@@ -214,7 +219,7 @@ function GrabPrice() {
         }))['orderID'];*/
         //await v4_mk_request('GET', '/api/v4/order?orderID=' + order_id_v4);
         //await v4_mk_request('DELETE', '/api/v4/order', {'orderID': [order_id_v4]});
-        await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
+        await v4_mk_request('GET', axios.get(`${API_URL}/api/v4/instrument?symbol=BTCUSD`));
         //await v4_mk_request('GET', '/api/v4/instrument?symbol=BTCUSD');
       }
       
