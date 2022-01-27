@@ -1,17 +1,28 @@
 import React, { Component, useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
-import axios from "axios";
-import { API_URL } from "../setupProxy";
-import https from 'https'
-import crypto from 'crypto'
+//import axios from "axios";
+//import { API_URL } from "../setupProxy";
+//import https from 'https'
+//import crypto from 'crypto'
 //axios.defaults.withCredentials = true;
 
 
-//const https = require('https');
-//const crypto = require('crypto');
+const https = require('https');
+const crypto = require('crypto');
+
+//const express = require("express")
+//const app = express()
+//const cors = require("cors")
+
+//app.use(cors({
+ //   origin: "*",
+//}))
 
 var one, two, three, four, five, six
-let info
+//let info = [];
+let info = [{ askPrice: '000', bidPrice: '000', lastPrice: '000', updateTime: '000'}]
+
+
 
 GrabPrice();
 
@@ -21,7 +32,7 @@ function Pricing() {
     let [threes, setThrees] = useState()
     let [fours, setFours] = useState()
 
-    const MINUTE_MS = 5000;
+    const MINUTE_MS = 1000;
 
     useEffect(() => {
       const interval = setInterval(() => {
@@ -94,8 +105,6 @@ function Pricing() {
                 }
             </table>
             
-            
-          
           
         </div>
     </div>
@@ -113,7 +122,8 @@ function Pricing() {
 function GrabPrice() {
 
     //trade-am.osl.com
-    const host = 'trade-am.osl.com';
+    //const mode = {mode: 'no-cors'}
+    const host = '';
     const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
     const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
     console.log("beginning of function")
@@ -127,7 +137,7 @@ function GrabPrice() {
             info = JSON.parse(str)
             //infos = info[0].askPrice
             
-            //console.log('ask price:', info[0].askPrice);
+            console.log('ask price:', info[0].askPrice);
             //console.log('bid price:',info[0].bidPrice);
             //console.log('currency:',info[0].currency);
             //console.log('last price:',info[0].lastPrice);
@@ -165,17 +175,16 @@ function GrabPrice() {
             'api-key': key,
             'api-signature': v4_gen_sig(secret, method, path, tonce, body_str),
             'api-expires': tonce,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
           }
           if (body) {
             headers['Content-Length'] = Buffer.byteLength(body_str);
           }
           const opt = { host, method, path, headers };
-          console.log('opt: ',opt)
-          console.log('time 1: ', tonce)
+         
           const req = https.request(opt, response_as_json(resolve, reject));
-          console.log('req: ',req)
-          console.log('body_str: ',body_str)
+          
+      
           if (body) {
             req.write(body_str);
           }
@@ -183,33 +192,6 @@ function GrabPrice() {
         });
       }
 
-      function v4_mkdp_request(method, path, body) {
-        console.log(`=> ${method} ${path}`);
-        return new Promise((resolve, reject) => {
-          const tonce = Math.floor(Date.now() / 1000) + 10;
-          const body_str = JSON.stringify(body);
-          const headers = {
-            'api-key': key,
-            'api-signature': v4_gen_sig(secret, method, path, tonce, body_str),
-            'api-expires': tonce,
-            'Content-Type': 'application/json'
-          }
-          if (body) {
-            headers['Content-Length'] = Buffer.byteLength(body_str);
-          }
-          const opt = { host, method, path, headers };
-          console.log('opt: ',opt)
-          console.log('time 1: ', tonce)
-          const req = https.request(opt, response_as_json(resolve, reject));
-          console.log('req: ',req)
-          console.log('body_str: ',body_str)
-          if (body) {
-            req.write(body_str);
-          }
-          req.end();
-        });
-      }
-      
       async function run() {
         /*const order_id_v4 = (await v4_mk_request('POST', '/api/v4/order', {
           'ordType': 'Market',

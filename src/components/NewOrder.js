@@ -15,8 +15,8 @@ const showForm = () => {
   
             <form onSubmit={(event) => {
               event.preventDefault()
-              //makeBuyOrder(dispatch, exchange, token, web3, buyOrder, account)
               Buy()
+              //makeBuyOrder(dispatch, exchange, token, web3, buyOrder, account)
             }}>
             <div className="form-group small">
             
@@ -59,8 +59,9 @@ const showForm = () => {
   
           <form onSubmit={(event) => {
             event.preventDefault()
+            Sell()
             //makeSellOrder(dispatch, exchange, token, web3, sellOrder, account)
-            console.log('form  4sumbitted')
+            console.log('form  4 sumbitted')
           }}>
           <div className="form-group small">
             <label>Buy Sell (dummy values)</label>
@@ -70,7 +71,7 @@ const showForm = () => {
                 className="form-control form-control-sm bg-dark text-white"
                 placeholder="Sell amount"
                 onChange={//(e) => dispatch( sellOrderAmountChanged( e.target.value ) )
-                console.log('form 4 sumbitted')
+                  console.log('form  5 sumbitted')
                 }
                 required
               />
@@ -122,12 +123,13 @@ function NewOrder() {
 
 function Buy() {
 
+  //trade-am.osl.com
     //trade-am.oslsandbox.com
   //const host = ''
 //const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
 //const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
 
-    const host = 'trade-am.osl.com';
+    const host = '';
     const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
     const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
   function response_as_json(resolve, reject) {
@@ -215,7 +217,7 @@ function Sell() {
   //const host = ''
 //const key = 'cf3ec38b-9f37-4f45-b8b9-780381005fc6'
 //const secret = '51mSmwwUX2/CU1uL62TLiLNr5K6lTSU4FgEtSabe/pYy61VBY0iyUN79ds8AA9HAo1KGgz2tCPe8dYhLrWLV3w=='
-    const host = 'trade-am.osl.com';
+    const host = '';
     const key = '262a8c44-c16d-443a-81c3-6bdb374604dc';
     const secret = 'LrqdScibZdS7AqzZIRKzBbjNPwFeAVDrYZb+A/Z2vW9FzGaDeFnS7bLGxD8U4qjwc07wYxJPx/5X4PQaR/wqTA==';
 
@@ -237,7 +239,7 @@ function Sell() {
           //console.log('price decimals:',info[0].priceDecimals);
           //console.log('quantity decimals:',info[0].quantityDecimals);
           //console.log('update time:',info[0].updateTime);
-          console.log('Buy Function Run');
+          console.log('Sell Function Run');
 
           ((res.statusCode >= 200 && res.statusCode < 300) ? resolve : reject)(str ? JSON.parse(str) : '');
         });
