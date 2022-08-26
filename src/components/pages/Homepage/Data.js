@@ -9,7 +9,7 @@ export const homeObjOne = {
     headline: 'TheBlackMonk',
     description:
       //'Meditation. Routine. Balance to modern life Growing up in highschool with cellphones',
-      'Full Stack Ethereum Developer. Tech Enthusiast. University of Michigan Graduate.',
+      'Full Stack Web Developer. Tech Enthusiast. University of Michigan Graduate.',
     buttonLabel: 'About Me',
     imgStart: '',
     img: 'images/suit-3.png',
