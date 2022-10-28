@@ -10,11 +10,13 @@ export const homeObjOne = {
     description:
       //'Meditation. Routine. Balance to modern life Growing up in highschool with cellphones',
       'Full Stack Web Developer. Tech Enthusiast. University of Michigan Graduate.',
-    buttonLabel: 'About Me',
+    buttonLabel: 'Video Resume',
     imgStart: '',
     img: 'images/suit-3.png',
     alt: 'Credit Card',
-    linked: '/about'
+    linked: '',
+    exit: 'link',
+    href: 'https://www.youtube.com/watch?v=ct6zubejsIc'
 };
 
 //my passion for blockchain
