@@ -45,8 +45,9 @@ function Navbar() {
                     <Link to='/' className='navbar-logo' onClick=
                     {closeMobileMenu}>
                         <GiMeditation className='navbar-icon' />
-                        TBM
+                        TBM 
                     </Link>
+                    <p className='greyed-out'>Built with React</p>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}
                     </div>
