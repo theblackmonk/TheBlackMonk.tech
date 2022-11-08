@@ -11,10 +11,19 @@ function Home() {
             <HeroSection {...homeObjTwo} />
             <HeroSection {...homeObjThree} />
             <HeroSection {...homeObjFour} />
-            <Projects />
             <HeroSection {...homeObjFive} />
         </>
     );
 }
 
 export default Home
+
+/*
+<HeroSection {...homeObjOne} />
+            <HeroSection {...homeObjTwo} />
+            <HeroSection {...homeObjThree} />
+            <HeroSection {...homeObjFour} />
+            <Projects />
+            <HeroSection {...homeObjFive} />
+
+*/
