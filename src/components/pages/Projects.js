@@ -14,21 +14,21 @@ function Projects() {
         <div className='pricing__wrapper'>
           <h1 className='pricing__heading'>Portfolio</h1>
           <div className='pricing__container'>
-            <Link to='/about' className='pricing__container-card'>
+            <Link to='/projects/stockphotos' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
                   <GiAbstract082 />
                 </div>
-                <h3>Blockchain Kickstarter</h3>
-                <h7>Udemy tutorial</h7>
+                <h3>Free High Res Photos</h3>
+                <h6>REST API</h6>
                 <br></br>
                 <br></br>
                 <h6>Problem Solution:</h6>
                 <ul className='pricing__container-features'>
-                  <li>Reduce scams with transparency</li>
-                  <li>Smart-contract pays vendor directly</li>
-                  <li>No trusting third parties holding funds</li>
-                  <li>Verify who recieved the money</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
                 </ul>
                 <Button buttonSize='btn--wide' buttonColor='primary'
                 onClick={(e) => {e.preventDefault(); window.location.href='https://www.github.com/theblackmonk'; }}>
@@ -42,7 +42,7 @@ function Projects() {
                   <GiAbstract116 />
                 </div>
                 <h3>Ethereum token exchange</h3>
-                <h7>DAPP univerisity tutorial</h7>
+                <h6>DAPP univerisity tutorial</h6>
                 <br></br>
                 <br></br>
                 <h6>Problem Solution:</h6>
@@ -64,7 +64,7 @@ function Projects() {
                   <GiAbstract069 />
                 </div>
                 <h3>ETH 2.0 Validator Crowdfunding</h3>
-                <h7>built from scratch - Coming Soon</h7>
+                <h6>built from scratch - Coming Soon</h6>
                 <br></br>
                 <br></br>
                 <h6>Problem Solution:</h6>

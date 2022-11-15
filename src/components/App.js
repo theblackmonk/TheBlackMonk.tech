@@ -12,6 +12,7 @@ import Meditation from '../components/pages/Meditation/Meditation';
 import Youtube from '../components/pages/Youtube/Youtube';
 import Projects from './pages/Projects';
 import ScrollToTop from './ScrollToTop';
+import Stockphotos from './Stockphotos/Stockphotos';
 
 
 const PageNotFound = () =>{
@@ -35,6 +36,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />}/>
+            <Route path='/projects/stockphotos' element={<Stockphotos />} />
             <Route path='/about' element={<About />}/>
             <Route path='/bitcoin' element={<Bitcoin />}/>
             <Route path='/ethereum' element={<Ethereum />}/>
