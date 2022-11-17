@@ -2,12 +2,14 @@ import React from 'react';
 import HeroSection from './HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data'; //object we will pass in with all properties
 import Projects from '../Projects';
+import Stockphotos from '../../Stockphotos/Stockphotos';
 
 
 function Home() {
     return (
         <>
             <HeroSection {...homeObjOne} />
+            <Stockphotos />
             <HeroSection {...homeObjTwo} />
             <HeroSection {...homeObjThree} />
             <HeroSection {...homeObjFour} />
