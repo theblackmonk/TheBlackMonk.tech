@@ -9,7 +9,7 @@ const Photo = (props) => {
             <div className="photo-info">
                 <div>
                     <h4>{props.user.name}</h4>
-                    <p>{props.likes}</p>
+                    <p>{props.likes} likes</p>
                 </div>
                 <a href={props.user.portfolio_url}>
                     <img src={props.user.profile_image.medium} className="user-img"/>

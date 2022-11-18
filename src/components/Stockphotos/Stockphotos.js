@@ -110,12 +110,16 @@ function Stockphotos() {
     return (
       <main>
         <section className="search">
+          <div className='title'>
+            <h3>Search Inifite Royalty Free Photos</h3>
+            <h4>Utilizing: REST API calls, and Dynamic Data</h4>
+            <h4>In an aestheticly pleasing way</h4>
+          </div>
           <form className="search-form">
             <input type="text" placeholder="search" className="form-input" 
             value={query} onChange={(e)=> setQuery(e.target.value)}
             />
-            <button type="submit" className="submit-btn" onClick={handleSubmit} />
-              <FaSearch />
+            <button type="submit" className="submit-btn" onClick={handleSubmit}><FaSearch /></button>
           </form>
         </section>
         <section className="photos">
