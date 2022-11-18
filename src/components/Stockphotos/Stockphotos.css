@@ -50,7 +50,7 @@ Variables
   ===============
   */
   
-  *,
+  
   ::after,
   ::before {
     margin: 0;
@@ -71,10 +71,7 @@ Variables
   a {
     text-decoration: none;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
+  .title {
     letter-spacing: var(--spacing);
     text-transform: capitalize;
     line-height: 1.25;
@@ -116,9 +113,7 @@ Variables
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6 {
+    h4, {
       line-height: 1;
     }
   }
