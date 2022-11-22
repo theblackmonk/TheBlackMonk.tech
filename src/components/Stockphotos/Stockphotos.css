@@ -94,7 +94,7 @@ Variables
     margin-bottom: 100px;
   }
   
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 991px) {
     .section {
       width: 95vw;
     }
@@ -184,7 +184,7 @@ Variables
   .photo:hover .photo-info {
     transform: translateY(0);
   }
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     .photos-center {
       grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     }
