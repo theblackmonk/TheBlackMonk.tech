@@ -184,7 +184,7 @@ Variables
   .photo:hover .photo-info {
     transform: translateY(0);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     .photos-center {
       grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     }
